@@ -1,11 +1,11 @@
 from flask import Flask, render_template, redirect, url_for, request
 
 from todo_app.flask_config import Config
-from todo_app.trello import trello
+from todo_app.trello import board
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
+trello=board.Board("DevOps-Course-Starter-Module-2")
 
 @app.route('/')
 def index():

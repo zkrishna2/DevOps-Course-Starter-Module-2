@@ -32,7 +32,9 @@ $ cp .env.template .env  # (first time only)
 
 The `.env` file is used by flask to set environment variables when running `flask run`. This enables things like development mode (which also enables features like hot reloading when you make a file change).
 
-The app uses Trello's API to fetch and save to-do tasks. In order to call their API, [create a Trello account](https://trello.com/signup) - This is a one-time operation on first setup. Then generate an API key and token by following the [instructions here](https://trello.com/app-key). Store key and token in the variables TRELLO_KEY and TRELLO_TOKEN respectively in the `.env` file. Also store the name of the Trello Board (having 'To Do' and 'Done' lists) in the variable TRELLO_BOARD_NAME in the `.env` file.
+The app uses Trello's API to fetch and save to-do tasks. In order to call their API, [create a Trello account](https://trello.com/signup) - This is a one-time operation on first setup. Then generate an API key and token by following the [instructions here](https://trello.com/app-key). Store key and token in the variables TRELLO_KEY and TRELLO_TOKEN respectively in the `.env` file. 
+
+Create a Trello board called 'DevOps-Course-Starter-Module-2' (having 'To Do' and 'Done' lists) or any other name of Trello board can be specified in the `app.py` file.
 
 
 ## Running the App
